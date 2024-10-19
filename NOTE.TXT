@@ -1,0 +1,17 @@
+Explanation of the Code:
+Loading the Dataset: The Titanic dataset is read into a Pandas DataFrame using pd.read_csv().
+
+Mean Fare Calculation:
+
+The groupby() function is used to group the data by Sex and Pclass.
+The mean() function calculates the average fare for each combination of sex and class.
+The results are reset into a new DataFrame for easier reading.
+Median Age of Deceased Passengers:
+
+The dataset is filtered to include only the passengers who did not survive (df['Survived'] == 0).
+The groupby() function is again used to group this filtered data by Sex, and the median() function computes the median age.
+The mean age is similarly computed using the mean() function.
+Output:
+The output will display the mean fare for each combination of sex and passenger class.
+The median and mean ages of passengers who died, grouped by their sex.
+This code will provide a comprehensive analysis based on the requirements you've outlined. Let me know if you need any further modifications or explanations!
